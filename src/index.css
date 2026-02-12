@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Ultra Pink / Romantic Palette */
+  --color-primary: #ff4d6d;
+  /* Vibrant Pink */
+  --color-primary-light: #ff8fa3;
+  /* Soft Pink */
+  --color-secondary: #fff0f3;
+  /* Very Light Pink Background */
+  --color-accent: #c9184a;
+  /* Deep Pink/Red */
+  --color-text: #800f2f;
+  /* Dark berry text */
+  --color-text-light: #ff758f;
+  /* Light pink text */
+  --color-white: #ffffff;
+  --color-gold: #ffb703;
+  /* Warmer gold */
+
+  /* Gradients */
+  --bg-gradient: linear-gradient(135deg, #fff0f3 0%, #ffe5ec 100%);
+  --button-gradient: linear-gradient(45deg, #ff4d6d, #ff758f);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-shadow: 0 8px 32px 0 rgba(255, 77, 109, 0.2);
+
+  font-family: 'Assistant', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  /* Use gradient background */
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  direction: rtl;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.handwritten {
+  font-family: 'Dancing Script', cursive;
+}
+
+button {
+  font-family: 'Assistant', sans-serif;
+  cursor: pointer;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
